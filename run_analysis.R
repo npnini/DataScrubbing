@@ -104,4 +104,4 @@ mean_subject_activity <- ddply(merged_df, .(Subject,Activity), function(x) colMe
 
 # the resulting data frame is written to disk
 
-write.csv(mean_subject_activity, ".\\data\\tidy.csv", row.names=FALSE)
+write.table(mean_subject_activity, ".\\data\\tidy.txt", row.names=FALSE)
